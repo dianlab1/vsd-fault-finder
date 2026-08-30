@@ -1,0 +1,618 @@
+[
+  {
+    "make": "Inovance",
+    "model": "MD500",
+    "errorCode": "Err02",
+    "faultTypeCode": 2,
+    "title": "Overcurrent during acceleration",
+    "description": "An overcurrent condition occurs while the motor is accelerating.",
+    "possibleCauses": [
+      "The output circuit is grounded or short circuited.",
+      "Motor auto-tuning has not been performed when using SVC or CLVC control.",
+      "The acceleration time is too short.",
+      "Overcurrent stall prevention parameters are set improperly.",
+      "The customized torque boost or V/F curve is not appropriate.",
+      "A spinning motor is started.",
+      "The AC drive size is too small.",
+      "The AC drive is suffering from external interference."
+    ],
+    "solutions": [
+      "Eliminate external faults and check for a short circuit in the motor or contactor.",
+      "Set the motor parameters according to the motor nameplate and perform motor auto-tuning.",
+      "Increase the acceleration time.",
+      "Enable and correctly adjust the overcurrent stall prevention function.",
+      "Adjust the customized torque boost or V/F curve.",
+      "Enable the catching a spinning motor function or start the motor after it stops.",
+      "Replace with a larger AC drive.",
+      "Check the historical fault records and locate the source of interference."
+    ]
+  },
+  {
+    "make": "Inovance",
+    "model": "MD500",
+    "errorCode": "Err03",
+    "faultTypeCode": 3,
+    "title": "Overcurrent during deceleration",
+    "description": "An overcurrent condition occurs while the motor is decelerating.",
+    "possibleCauses": [
+      "The output circuit is grounded or short circuited.",
+      "Motor auto-tuning has not been performed when using SVC or CLVC control.",
+      "The deceleration time is too short.",
+      "Overcurrent stall prevention parameters are set improperly.",
+      "The braking unit and regenerative resistor are not installed.",
+      "The AC drive is suffering from external interference."
+    ],
+    "solutions": [
+      "Eliminate external faults and check for a short circuit in the motor or contactor.",
+      "Set the motor parameters according to the motor nameplate and perform motor auto-tuning.",
+      "Increase the deceleration time.",
+      "Enable and correctly adjust the overcurrent stall prevention function.",
+      "Install the braking unit and regenerative resistor.",
+      "Check the historical fault records and locate the source of interference."
+    ]
+  },
+  {
+    "make": "Inovance",
+    "model": "MD500",
+    "errorCode": "Err04",
+    "faultTypeCode": 4,
+    "title": "Overcurrent at constant speed",
+    "description": "An overcurrent condition occurs while the motor is running at constant speed.",
+    "possibleCauses": [
+      "The output circuit is grounded or short circuited.",
+      "Motor auto-tuning has not been performed when using SVC or CLVC control.",
+      "Overcurrent stall prevention parameters are set improperly.",
+      "The AC drive size is too small.",
+      "The AC drive is suffering from external interference."
+    ],
+    "solutions": [
+      "Eliminate external faults and check for a short circuit in the motor or contactor.",
+      "Set the motor parameters according to the motor nameplate and perform motor auto-tuning.",
+      "Enable and correctly adjust the overcurrent stall prevention function.",
+      "Replace with a larger AC drive.",
+      "Check the historical fault records and locate the source of interference."
+    ]
+  },
+  {
+    "make": "Inovance",
+    "model": "MD500",
+    "errorCode": "Err05",
+    "faultTypeCode": 5,
+    "title": "Overvoltage during acceleration",
+    "description": "The DC bus voltage becomes excessively high while the motor is accelerating.",
+    "possibleCauses": [
+      "The input voltage is too high.",
+      "An external force drives the motor during acceleration.",
+      "Overvoltage stall prevention parameters are set improperly.",
+      "The braking unit and regenerative resistor are not installed."
+    ],
+    "solutions": [
+      "Adjust the input voltage to the normal range.",
+      "Cancel the external force or install a regenerative resistor.",
+      "Enable the overvoltage stall prevention function and adjust its parameters correctly.",
+      "Install the braking unit and regenerative resistor."
+    ]
+  },
+  {
+    "make": "Inovance",
+    "model": "MD500",
+    "errorCode": "Err06",
+    "faultTypeCode": 6,
+    "title": "Overvoltage during deceleration",
+    "description": "The DC bus voltage becomes excessively high while the motor is decelerating.",
+    "possibleCauses": [
+      "Overvoltage stall prevention parameters are set improperly.",
+      "An external force drives the motor during deceleration.",
+      "The deceleration time is too short.",
+      "The braking unit and regenerative resistor are not installed."
+    ],
+    "solutions": [
+      "Enable the overvoltage stall prevention function and adjust its parameters correctly.",
+      "Cancel the external force or install a regenerative resistor.",
+      "Increase the deceleration time.",
+      "Install the braking unit and regenerative resistor."
+    ]
+  },
+  {
+    "make": "Inovance",
+    "model": "MD500",
+    "errorCode": "Err07",
+    "faultTypeCode": 7,
+    "title": "Overvoltage at constant speed",
+    "description": "The DC bus voltage becomes excessively high while the motor is running at constant speed.",
+    "possibleCauses": [
+      "Overvoltage stall prevention parameters are set improperly.",
+      "An external force drives the motor during running."
+    ],
+    "solutions": [
+      "Enable the overvoltage stall prevention function and adjust its parameters correctly.",
+      "Cancel the external force or install a regenerative resistor."
+    ]
+  },
+  {
+    "make": "Inovance",
+    "model": "MD500",
+    "errorCode": "Err08",
+    "faultTypeCode": 8,
+    "title": "Pre-charge resistor fault",
+    "description": "The DC bus voltage continuously fluctuates around the undervoltage threshold, indicating a pre-charge circuit problem.",
+    "possibleCauses": [
+      "The bus voltage fluctuates around the undervoltage threshold continuously."
+    ],
+    "solutions": [
+      "Contact the agent or Inovance for inspection."
+    ]
+  },
+  {
+    "make": "Inovance",
+    "model": "MD500",
+    "errorCode": "Err09",
+    "faultTypeCode": 9,
+    "title": "Undervoltage",
+    "description": "The AC drive detects that its input or DC bus voltage is below the permissible operating range.",
+    "possibleCauses": [
+      "An instantaneous power failure occurs.",
+      "The AC drive input voltage is outside the allowable range.",
+      "The bus voltage is abnormal.",
+      "The rectifier bridge is abnormal.",
+      "The buffer/pre-charge resistor is abnormal.",
+      "The drive board is abnormal.",
+      "The control board is abnormal."
+    ],
+    "solutions": [
+      "Enable the power dip ride-through function.",
+      "Adjust the input voltage to the normal range.",
+      "Contact the agent or Inovance if the bus voltage is abnormal.",
+      "Contact the agent or Inovance for inspection of the rectifier bridge, resistor, drive board or control board."
+    ]
+  },
+  {
+    "make": "Inovance",
+    "model": "MD500",
+    "errorCode": "Err10",
+    "faultTypeCode": 10,
+    "title": "AC drive overload",
+    "description": "The AC drive is operating under an overload condition.",
+    "possibleCauses": [
+      "The load is too heavy.",
+      "A locked-rotor condition occurs on the motor.",
+      "The AC drive size is too small."
+    ],
+    "solutions": [
+      "Reduce the load and check the motor and mechanical conditions.",
+      "Check for a locked-rotor condition.",
+      "Replace with a larger AC drive."
+    ]
+  },
+  {
+    "make": "Inovance",
+    "model": "MD500",
+    "errorCode": "Err11",
+    "faultTypeCode": 11,
+    "title": "Motor overload",
+    "description": "The motor has entered an overload condition.",
+    "possibleCauses": [
+      "Motor overload protection gain F9-01 is set improperly.",
+      "The load is too heavy.",
+      "A locked-rotor condition occurs on the motor.",
+      "The AC drive size is too small."
+    ],
+    "solutions": [
+      "Set F9-01 correctly.",
+      "Reduce the load.",
+      "Check the motor and mechanical conditions.",
+      "Replace with a larger AC drive."
+    ]
+  },
+  {
+    "make": "Inovance",
+    "model": "MD500",
+    "errorCode": "Err12",
+    "faultTypeCode": 12,
+    "title": "Power input phase loss",
+    "description": "The AC drive detects an abnormal three-phase input condition.",
+    "possibleCauses": [
+      "The three-phase power input is abnormal.",
+      "The drive board is abnormal.",
+      "The lightning protection board is abnormal.",
+      "The control board is abnormal.",
+      "The rectifier bridge is abnormal."
+    ],
+    "solutions": [
+      "Eliminate faults in the external power circuit.",
+      "Contact the agent or Inovance for inspection of the drive board, lightning protection board, control board or rectifier bridge."
+    ]
+  },
+  {
+    "make": "Inovance",
+    "model": "MD500",
+    "errorCode": "Err13",
+    "faultTypeCode": 13,
+    "title": "Power output phase loss",
+    "description": "The AC drive detects a missing or abnormal motor output phase.",
+    "possibleCauses": [
+      "The motor is faulty.",
+      "The cable connecting the AC drive and motor is abnormal.",
+      "The three-phase outputs of the AC drive are unbalanced.",
+      "The drive board is abnormal.",
+      "The IGBT module is abnormal."
+    ],
+    "solutions": [
+      "Check the motor for faults or an open circuit.",
+      "Eliminate external cable faults.",
+      "Check whether the motor three-phase winding is normal.",
+      "Contact the agent or Inovance if the drive board or IGBT module is abnormal."
+    ]
+  },
+  {
+    "make": "Inovance",
+    "model": "MD500",
+    "errorCode": "Err14",
+    "faultTypeCode": 14,
+    "title": "Module overheat",
+    "description": "The inverter module temperature is excessively high.",
+    "possibleCauses": [
+      "The ambient temperature is too high.",
+      "The air filter is blocked.",
+      "The cooling fan is damaged.",
+      "The thermally sensitive resistor of the module is damaged.",
+      "The inverter module is damaged."
+    ],
+    "solutions": [
+      "Lower the ambient temperature.",
+      "Clean the air filter.",
+      "Replace the damaged cooling fan.",
+      "Replace the damaged thermally sensitive resistor.",
+      "Replace the inverter module."
+    ]
+  },
+  {
+    "make": "Inovance",
+    "model": "MD500",
+    "errorCode": "Err15",
+    "faultTypeCode": 15,
+    "title": "External equipment fault",
+    "description": "An external fault signal has been received by the AC drive.",
+    "possibleCauses": [
+      "An external fault signal is input through a digital input.",
+      "An external fault signal is input through virtual I/O."
+    ],
+    "solutions": [
+      "Eliminate the external fault and confirm that the mechanical condition allows restart.",
+      "Check that the virtual I/O parameters are configured correctly.",
+      "Reset the operation after the external fault has been removed."
+    ]
+  },
+  {
+    "make": "Inovance",
+    "model": "MD500",
+    "errorCode": "Err16",
+    "faultTypeCode": 16,
+    "title": "Communication fault",
+    "description": "The AC drive has detected a communication problem.",
+    "possibleCauses": [
+      "The host computer is in an abnormal state.",
+      "The communication cable is abnormal.",
+      "The serial-port communication protocol is set improperly.",
+      "Communication parameters in group Fd are set improperly."
+    ],
+    "solutions": [
+      "Check the host computer cabling.",
+      "Check the communication cables.",
+      "Set the serial-port communication protocol correctly.",
+      "Set the communication parameters in group Fd correctly."
+    ]
+  },
+  {
+    "make": "Inovance",
+    "model": "MD500",
+    "errorCode": "Err17",
+    "faultTypeCode": 17,
+    "title": "Contactor fault",
+    "description": "The AC drive has detected a fault involving its contactor or associated power circuitry.",
+    "possibleCauses": [
+      "The drive board or power supply is abnormal.",
+      "The contactor is abnormal.",
+      "The lightning protection board is abnormal."
+    ],
+    "solutions": [
+      "Replace the faulty drive board or power supply board.",
+      "Replace the contactor.",
+      "Replace the lightning protection board."
+    ]
+  },
+  {
+    "make": "Inovance",
+    "model": "MD500",
+    "errorCode": "Err18",
+    "faultTypeCode": 18,
+    "title": "Current detection fault",
+    "description": "The AC drive has detected a problem with its current measurement circuit.",
+    "possibleCauses": [
+      "The Hall current sensor is abnormal.",
+      "The drive board is abnormal."
+    ],
+    "solutions": [
+      "Replace the Hall current sensor.",
+      "Replace the drive board."
+    ]
+  },
+  {
+    "make": "Inovance",
+    "model": "MD500",
+    "errorCode": "Err19",
+    "faultTypeCode": 19,
+    "title": "Motor auto-tuning fault",
+    "description": "The motor auto-tuning process has failed.",
+    "possibleCauses": [
+      "Motor parameters are not set according to the nameplate.",
+      "The motor auto-tuning process times out.",
+      "The encoder is abnormal."
+    ],
+    "solutions": [
+      "Set the motor parameters correctly according to the motor nameplate.",
+      "Check the cable connecting the AC drive and motor.",
+      "Check that F1-27 encoder pulses per revolution is set correctly.",
+      "Check that the encoder signal lines are connected correctly and securely."
+    ]
+  },
+  {
+    "make": "Inovance",
+    "model": "MD500",
+    "errorCode": "Err20",
+    "faultTypeCode": 20,
+    "title": "Encoder fault",
+    "description": "The AC drive has detected an encoder or feedback-related fault.",
+    "possibleCauses": [
+      "The encoder type is not matched or configured correctly.",
+      "The encoder connection is incorrect.",
+      "The encoder is damaged.",
+      "The PG card is abnormal."
+    ],
+    "solutions": [
+      "Set the encoder type correctly.",
+      "Check the PG card power supply and phase sequence.",
+      "Replace the encoder if damaged.",
+      "Replace the PG card if faulty."
+    ]
+  },
+  {
+    "make": "Inovance",
+    "model": "MD500",
+    "errorCode": "Err21",
+    "faultTypeCode": 21,
+    "title": "EEPROM read-write fault",
+    "description": "The AC drive has detected a fault while reading from or writing to its EEPROM.",
+    "possibleCauses": [
+      "The EEPROM chip is damaged."
+    ],
+    "solutions": [
+      "Replace the main control board."
+    ]
+  },
+  {
+    "make": "Inovance",
+    "model": "MD500",
+    "errorCode": "Err22",
+    "faultTypeCode": 22,
+    "title": "AC drive hardware fault",
+    "description": "The AC drive has detected an internal hardware fault.",
+    "possibleCauses": [
+      "An internal AC drive hardware fault has occurred."
+    ],
+    "solutions": [
+      "Contact the agent or Inovance for inspection and repair."
+    ]
+  },
+  {
+    "make": "Inovance",
+    "model": "MD500",
+    "errorCode": "Err23",
+    "faultTypeCode": 23,
+    "title": "Short circuit to ground",
+    "description": "A short circuit between the motor circuit and ground has been detected.",
+    "possibleCauses": [
+      "The motor is short circuited to ground."
+    ],
+    "solutions": [
+      "Replace the cable or motor."
+    ]
+  },
+  {
+    "make": "Inovance",
+    "model": "MD500",
+    "errorCode": "Err26",
+    "faultTypeCode": 26,
+    "title": "Accumulative running time reached",
+    "description": "The accumulated running time has reached the configured setting.",
+    "possibleCauses": [
+      "The accumulative running time has reached the set value."
+    ],
+    "solutions": [
+      "Clear the record through the parameter initialization function."
+    ]
+  },
+  {
+    "make": "Inovance",
+    "model": "MD500",
+    "errorCode": "Err27",
+    "faultTypeCode": 27,
+    "title": "User-defined fault 1",
+    "description": "The first user-defined fault input has been triggered.",
+    "possibleCauses": [
+      "The user-defined fault 1 signal is input through a digital input.",
+      "The user-defined fault 1 signal is input through virtual I/O."
+    ],
+    "solutions": [
+      "Remove the condition generating the user-defined fault.",
+      "Check the associated digital input or virtual I/O configuration.",
+      "Reset the operation."
+    ]
+  },
+  {
+    "make": "Inovance",
+    "model": "MD500",
+    "errorCode": "Err28",
+    "faultTypeCode": 28,
+    "title": "User-defined fault 2",
+    "description": "The second user-defined fault input has been triggered.",
+    "possibleCauses": [
+      "The user-defined fault 2 signal is input through a digital input.",
+      "The user-defined fault 2 signal is input through virtual I/O."
+    ],
+    "solutions": [
+      "Remove the condition generating the user-defined fault.",
+      "Check the associated digital input or virtual I/O configuration.",
+      "Reset the operation."
+    ]
+  },
+  {
+    "make": "Inovance",
+    "model": "MD500",
+    "errorCode": "Err29",
+    "faultTypeCode": 29,
+    "title": "Accumulative power-on time reached",
+    "description": "The accumulated power-on time has reached the configured setting.",
+    "possibleCauses": [
+      "The accumulative power-on time has reached the set value."
+    ],
+    "solutions": [
+      "Clear the record through the parameter initialization function."
+    ]
+  },
+  {
+    "make": "Inovance",
+    "model": "MD500",
+    "errorCode": "Err30",
+    "faultTypeCode": 30,
+    "title": "Load lost",
+    "description": "The AC drive detects that the running current is below the configured load-loss detection level.",
+    "possibleCauses": [
+      "The load is disconnected.",
+      "The load-loss detection level F9-64 is set incorrectly.",
+      "The load-loss detection time F9-65 is set incorrectly."
+    ],
+    "solutions": [
+      "Check whether the load has become disconnected.",
+      "Set F9-64 according to the actual running condition.",
+      "Set F9-65 according to the actual running condition."
+    ]
+  },
+  {
+    "make": "Inovance",
+    "model": "MD500",
+    "errorCode": "Err31",
+    "faultTypeCode": 31,
+    "title": "PID feedback lost during running",
+    "description": "The PID feedback signal has fallen below the configured detection level.",
+    "possibleCauses": [
+      "PID feedback is smaller than the FA-26 detection level."
+    ],
+    "solutions": [
+      "Check the PID feedback signal.",
+      "Set FA-26 correctly."
+    ]
+  },
+  {
+    "make": "Inovance",
+    "model": "MD500",
+    "errorCode": "Err40",
+    "faultTypeCode": 40,
+    "title": "Pulse-by-pulse current limit fault",
+    "description": "The AC drive has repeatedly reached its current limiting condition.",
+    "possibleCauses": [
+      "The load is too heavy.",
+      "A locked-rotor condition occurs on the motor.",
+      "The AC drive power class is too small."
+    ],
+    "solutions": [
+      "Reduce the load.",
+      "Check the motor and mechanical conditions.",
+      "Replace with a larger AC drive."
+    ]
+  },
+  {
+    "make": "Inovance",
+    "model": "MD500",
+    "errorCode": "Err41",
+    "faultTypeCode": 41,
+    "title": "Motor switchover fault during running",
+    "description": "Motor parameter group selection was changed while the AC drive was running.",
+    "possibleCauses": [
+      "Motor switchover was performed through a terminal while the AC drive was running."
+    ],
+    "solutions": [
+      "Stop the AC drive before performing motor switchover."
+    ]
+  },
+  {
+    "make": "Inovance",
+    "model": "MD500",
+    "errorCode": "Err42",
+    "faultTypeCode": 42,
+    "title": "Speed feedback error too large",
+    "description": "The difference between commanded and detected motor speed is too large.",
+    "possibleCauses": [
+      "Encoder parameters are set improperly.",
+      "Motor auto-tuning has not been performed.",
+      "F9-69 speed error detection level is set incorrectly.",
+      "F9-70 speed error detection time is set incorrectly."
+    ],
+    "solutions": [
+      "Set the encoder parameters correctly.",
+      "Perform motor auto-tuning.",
+      "Set F9-69 according to the actual operating conditions.",
+      "Set F9-70 according to the actual operating conditions."
+    ]
+  },
+  {
+    "make": "Inovance",
+    "model": "MD500",
+    "errorCode": "Err43",
+    "faultTypeCode": 43,
+    "title": "Motor overspeed",
+    "description": "The detected motor speed has exceeded the configured overspeed detection conditions.",
+    "possibleCauses": [
+      "Encoder parameters are set improperly.",
+      "Motor auto-tuning has not been performed.",
+      "F9-67 overspeed detection level is set incorrectly.",
+      "F9-68 overspeed detection time is set incorrectly."
+    ],
+    "solutions": [
+      "Set the encoder parameters correctly.",
+      "Perform motor auto-tuning.",
+      "Set F9-67 according to the actual operating conditions.",
+      "Set F9-68 according to the actual operating conditions."
+    ]
+  },
+  {
+    "make": "Inovance",
+    "model": "MD500",
+    "errorCode": "Err45",
+    "faultTypeCode": 45,
+    "title": "Motor overtemperature",
+    "description": "The motor temperature has become excessively high.",
+    "possibleCauses": [
+      "The temperature sensor cable connection is loose.",
+      "The motor temperature is too high."
+    ],
+    "solutions": [
+      "Check the temperature sensor cable connection and eliminate the fault.",
+      "Decrease the carrier frequency or take other measures to cool the motor."
+    ]
+  },
+  {
+    "make": "Inovance",
+    "model": "MD500",
+    "errorCode": "Err51",
+    "faultTypeCode": 51,
+    "title": "Initial position fault",
+    "description": "The AC drive has detected a fault during initial motor position identification.",
+    "possibleCauses": [
+      "An initial motor position identification fault has occurred."
+    ],
+    "solutions": [
+      "Check the motor and encoder-related conditions and perform the required motor identification procedure."
+    ]
+  }
+]

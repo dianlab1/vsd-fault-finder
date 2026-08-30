@@ -1,0 +1,1510 @@
+[
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "OUt1",
+    "faultTypeCode": 1,
+    "title": "Inverter unit phase-U protection",
+    "description": "Protection of the inverter unit phase-U.",
+    "possibleCauses": ["Acceleration is too fast", "IGBT module is damaged"],
+    "solutions": ["Increase acceleration time", "Replace the power unit"],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 282
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "OUt2",
+    "faultTypeCode": 2,
+    "title": "Inverter unit phase-V protection",
+    "description": "Protection of the inverter unit phase-V.",
+    "possibleCauses": [
+      "Misacts caused by interference",
+      "Drive wires are poorly connected",
+      "Short circuit to ground"
+    ],
+    "solutions": [
+      "Check drive wires",
+      "Check whether there is strong interference surrounding the peripheral equipment"
+    ],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 283
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "OUt3",
+    "faultTypeCode": 3,
+    "title": "Inverter unit phase-W protection",
+    "description": "Protection of the inverter unit phase-W.",
+    "possibleCauses": [
+      "Misacts caused by interference",
+      "Drive wires are poorly connected",
+      "Short circuit to ground"
+    ],
+    "solutions": [
+      "Check drive wires",
+      "Check whether there is strong interference surrounding the peripheral equipment"
+    ],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 283
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "OV1",
+    "faultTypeCode": 7,
+    "title": "Over-voltage during acceleration",
+    "description": "The VFD has detected an over-voltage condition during acceleration.",
+    "possibleCauses": [
+      "Deceleration time is too short",
+      "Exception occurred to input voltage",
+      "Large energy feedback",
+      "Lack of braking units",
+      "Dynamic braking is not enabled"
+    ],
+    "solutions": [
+      "Check input power",
+      "Check whether load deceleration time is too short or the motor starts during rotating",
+      "Install dynamic braking units",
+      "Check the setup of related function codes"
+    ],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 283
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "OV2",
+    "faultTypeCode": 8,
+    "title": "Over-voltage during deceleration",
+    "description": "The VFD has detected an over-voltage condition during deceleration.",
+    "possibleCauses": [
+      "Deceleration time is too short",
+      "Exception occurred to input voltage",
+      "Large energy feedback",
+      "Lack of braking units",
+      "Dynamic braking is not enabled"
+    ],
+    "solutions": [
+      "Check input power",
+      "Check whether load deceleration time is too short or the motor starts during rotating",
+      "Install dynamic braking units",
+      "Check the setup of related function codes"
+    ],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 283
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "OV3",
+    "faultTypeCode": 9,
+    "title": "Over-voltage during constant speed running",
+    "description": "The VFD has detected an over-voltage condition during constant speed running.",
+    "possibleCauses": [
+      "Deceleration time is too short",
+      "Exception occurred to input voltage",
+      "Large energy feedback",
+      "Lack of braking units",
+      "Dynamic braking is not enabled"
+    ],
+    "solutions": [
+      "Check input power",
+      "Check whether load deceleration time is too short or the motor starts during rotating",
+      "Install dynamic braking units",
+      "Check the setup of related function codes"
+    ],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 283
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "OC1",
+    "faultTypeCode": 4,
+    "title": "Over-current during acceleration",
+    "description": "The VFD has detected an over-current condition during acceleration.",
+    "possibleCauses": [
+      "Acceleration is too fast",
+      "Grid voltage is too low",
+      "VFD power is too small",
+      "Load transient or exception occurred",
+      "To-ground short circuit or output phase loss occurred",
+      "Strong external interference sources",
+      "Overcurrent stall protection is not enabled"
+    ],
+    "solutions": [
+      "Increase acceleration/deceleration time",
+      "Check input power",
+      "Select a VFD with larger power",
+      "Check if the load is short circuited, including to-ground or line-to-line short circuit, or whether rotation is not smooth",
+      "Check the output wiring",
+      "Check if there is strong interference",
+      "Check the setup of related function codes"
+    ],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 283
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "OC2",
+    "faultTypeCode": 5,
+    "title": "Over-current during deceleration",
+    "description": "The VFD has detected an over-current condition during deceleration.",
+    "possibleCauses": [
+      "Acceleration/deceleration settings can cause excessive current",
+      "Load transient or exception occurred",
+      "To-ground short circuit or output phase loss occurred"
+    ],
+    "solutions": [
+      "Increase acceleration/deceleration time",
+      "Check input power",
+      "Check the load and output wiring",
+      "Check for short circuits or abnormal motor rotation",
+      "Check the setup of related function codes"
+    ],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 283
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "OC3",
+    "faultTypeCode": 6,
+    "title": "Over-current during constant speed running",
+    "description": "The VFD has detected an over-current condition during constant speed running.",
+    "possibleCauses": [
+      "Grid voltage is too low",
+      "VFD power is too small",
+      "Load transient or exception occurred",
+      "To-ground short circuit or output phase loss occurred",
+      "Strong external interference sources",
+      "Overcurrent stall protection is not enabled"
+    ],
+    "solutions": [
+      "Check input power",
+      "Select a VFD with larger power",
+      "Check whether the load is short circuited or rotation is not smooth",
+      "Check the output wiring",
+      "Check if there is strong interference",
+      "Check the setup of related function codes"
+    ],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 283
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "UV",
+    "faultTypeCode": 10,
+    "title": "Bus undervoltage fault",
+    "description": "The VFD has detected that the DC bus voltage is too low.",
+    "possibleCauses": [
+      "Grid voltage is too low",
+      "Overvoltage stall protection is not enabled"
+    ],
+    "solutions": [
+      "Check grid input power",
+      "Check the setup of related function codes"
+    ],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 283
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "OL1",
+    "faultTypeCode": 11,
+    "title": "Motor overload",
+    "description": "The motor has entered an overload condition.",
+    "possibleCauses": [
+      "Grid voltage is too low",
+      "Rated motor current is set improperly",
+      "Motor stall or load jumps violently"
+    ],
+    "solutions": [
+      "Check grid voltage",
+      "Reset rated motor current",
+      "Check the load and adjust torque boost"
+    ],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 283
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "OL2",
+    "faultTypeCode": 12,
+    "title": "VFD overload",
+    "description": "The VFD has entered an overload condition.",
+    "possibleCauses": [
+      "Acceleration is too fast",
+      "The motor in rotating is restarted",
+      "Grid voltage is too low",
+      "Load is too large",
+      "Power is too small"
+    ],
+    "solutions": [
+      "Increase acceleration time",
+      "Avoid restart after stop",
+      "Check grid voltage",
+      "Select a VFD with larger power",
+      "Select a proper motor"
+    ],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 283
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "SPI",
+    "faultTypeCode": 13,
+    "title": "Phase loss on input side",
+    "description": "A phase loss has occurred on the VFD input side.",
+    "possibleCauses": [
+      "Phase loss occurred on R, S or T input",
+      "Violent fluctuation occurred on R, S or T input"
+    ],
+    "solutions": ["Check the input power", "Check installation wiring"],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 284
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "SPO",
+    "faultTypeCode": 14,
+    "title": "Phase loss on output side",
+    "description": "A phase loss has occurred on the VFD output side or the three motor phases are asymmetrical.",
+    "possibleCauses": [
+      "Phase loss occurred on U, V or W output",
+      "The three motor phases are asymmetrical"
+    ],
+    "solutions": ["Check the output wiring", "Check the motor and cable"],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 284
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "OH1",
+    "faultTypeCode": 15,
+    "title": "Overheat of rectifier module",
+    "description": "The rectifier module temperature has become excessive.",
+    "possibleCauses": [
+      "Air duct is blocked",
+      "Fan is damaged",
+      "Ambient temperature is too high",
+      "Long-time overload running"
+    ],
+    "solutions": [
+      "Ventilate the air duct or replace the fan",
+      "Lower the ambient temperature"
+    ],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 284
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "OH2",
+    "faultTypeCode": 16,
+    "title": "Overheat of inverter module",
+    "description": "The inverter module temperature has become excessive.",
+    "possibleCauses": ["Excessive inverter module temperature"],
+    "solutions": [
+      "Check the cooling system and ventilation",
+      "Check the inverter module and surrounding temperature"
+    ],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 284
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "EF",
+    "faultTypeCode": 17,
+    "title": "External fault",
+    "description": "The SI external fault input terminal has been activated.",
+    "possibleCauses": ["SI external fault input terminal acts"],
+    "solutions": ["Check the external device input"],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 284
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "CE",
+    "faultTypeCode": 18,
+    "title": "Modbus/Modbus TCP communication fault",
+    "description": "A communication fault has occurred between the VFD and the Modbus/Modbus TCP communication system.",
+    "possibleCauses": [
+      "Baud rate is set improperly",
+      "Communication line fault",
+      "Communication address error",
+      "Communication suffers from strong interference"
+    ],
+    "solutions": [
+      "Set the proper baud rate",
+      "Check the wiring of communication interfaces",
+      "Set the proper communication address",
+      "Replace or change the wiring to enhance anti-interference capacity"
+    ],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 284
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "ItE",
+    "faultTypeCode": 19,
+    "title": "Current detection fault",
+    "description": "The VFD has detected a fault in its current detection circuit.",
+    "possibleCauses": [
+      "Poor contact of the connector of the control board",
+      "Hall component is damaged",
+      "Exception occurred to the amplification circuit"
+    ],
+    "solutions": [
+      "Check the connector and re-plug",
+      "Replace the Hall component",
+      "Replace the main control board"
+    ],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 284
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "tE",
+    "faultTypeCode": 20,
+    "title": "Motor autotuning fault",
+    "description": "The motor autotuning process has failed.",
+    "possibleCauses": [
+      "Motor capacity does not match the VFD capacity",
+      "Motor parameter is set improperly",
+      "Parameters gained from autotuning deviate sharply from standard parameters",
+      "Autotuning timeout",
+      "Motor wiring may be incorrect"
+    ],
+    "solutions": [
+      "Change the VFD model or adopt V/F mode for control",
+      "Set the proper motor type and nameplate parameters",
+      "Empty the motor load and carry out autotuning again",
+      "Check motor wiring and parameter setup",
+      "Check whether upper limit frequency is larger than two-thirds of the rated frequency"
+    ],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 284
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "EEP",
+    "faultTypeCode": 21,
+    "title": "EEPROM fault",
+    "description": "An EEPROM read/write fault has occurred.",
+    "possibleCauses": [
+      "Read/write error occurred to the control parameters",
+      "EEPROM is damaged"
+    ],
+    "solutions": ["Press STOP/RST to reset", "Replace the main control board"],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 285
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "PIDE",
+    "faultTypeCode": 22,
+    "title": "PID feedback offline fault",
+    "description": "The PID feedback signal or source has become unavailable.",
+    "possibleCauses": [
+      "PID feedback offline",
+      "PID feedback source disappears"
+    ],
+    "solutions": [
+      "Check PID feedback signal wires",
+      "Check PID feedback source"
+    ],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 285
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "bCE",
+    "faultTypeCode": 23,
+    "title": "Braking unit fault",
+    "description": "A fault has occurred in the braking circuit or braking unit.",
+    "possibleCauses": [
+      "Braking circuit fault",
+      "Braking tube is damaged",
+      "Resistance of the external braking resistor is too small"
+    ],
+    "solutions": [
+      "Check the braking unit",
+      "Replace damaged braking tubes",
+      "Increase braking resistance"
+    ],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 285
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "END",
+    "faultTypeCode": 24,
+    "title": "Running time is up",
+    "description": "The actual running time of the VFD is greater than the configured running time.",
+    "possibleCauses": [
+      "The actual running time of the VFD is larger than the set running time"
+    ],
+    "solutions": ["Ask the supplier for help", "Adjust the set running time"],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 285
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "OL3",
+    "faultTypeCode": 25,
+    "title": "Electronic overload fault",
+    "description": "The VFD has released an overload pre-alarm based on the configured value.",
+    "possibleCauses": [
+      "The VFD releases overload pre-alarm based on the set value"
+    ],
+    "solutions": ["Check the load", "Check the overload pre-alarm threshold"],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 285
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "PCE",
+    "faultTypeCode": 26,
+    "title": "Keypad communication fault",
+    "description": "Communication between the keypad and VFD has failed.",
+    "possibleCauses": [
+      "Keypad wire is poorly contacted or disconnected",
+      "Keypad wire is too long and suffers strong interference",
+      "Circuit fault occurred to the keypad or communication part of the main board"
+    ],
+    "solutions": [
+      "Check the keypad wires to confirm whether a fault exists",
+      "Check the surroundings to rule out interference sources",
+      "Replace the hardware and ask for maintenance service"
+    ],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 285
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "UPE",
+    "faultTypeCode": 27,
+    "title": "Parameter upload error",
+    "description": "The VFD has failed to upload parameters through the keypad.",
+    "possibleCauses": [
+      "Keypad wire is poorly contacted or disconnected",
+      "Keypad wire is too long and suffers strong interference",
+      "Circuit fault occurred to the keypad or communication part of the main board"
+    ],
+    "solutions": [
+      "Check the surroundings to rule out interference sources",
+      "Replace the hardware and ask for maintenance service"
+    ],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 285
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "DNE",
+    "faultTypeCode": 28,
+    "title": "Parameter download error",
+    "description": "The VFD has failed to download parameters through the keypad.",
+    "possibleCauses": [
+      "Keypad wire is poorly contacted or disconnected",
+      "Keypad wire is too long and suffers strong interference",
+      "Data storage error occurred to the keypad"
+    ],
+    "solutions": [
+      "Check the surroundings to rule out interference sources",
+      "Replace the hardware and ask for maintenance service",
+      "Re-backup keypad data"
+    ],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 286
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "E-DP",
+    "faultTypeCode": 29,
+    "title": "PROFIBUS card communication timeout fault",
+    "description": "Communication between the PROFIBUS communication card and the host controller or PLC has timed out.",
+    "possibleCauses": [
+      "There is no data transmission between the communication card and the host controller or PLC"
+    ],
+    "solutions": [
+      "Check whether the communication card wiring is loose or disconnected"
+    ],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 289
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "E-NET",
+    "faultTypeCode": 30,
+    "title": "Ethernet card communication timeout fault",
+    "description": "Communication between the Ethernet communication card and the host controller has timed out.",
+    "possibleCauses": [
+      "There is no data transmission between the communication card and the host controller"
+    ],
+    "solutions": [
+      "Check whether the communication card wiring is loose or disconnected"
+    ],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 290
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "E-CAN",
+    "faultTypeCode": 31,
+    "title": "CANopen card communication timeout fault",
+    "description": "Communication between the CANopen communication card and the host controller or PLC has timed out.",
+    "possibleCauses": [
+      "There is no data transmission between the communication card and the host controller or PLC"
+    ],
+    "solutions": [
+      "Check whether the communication card wiring is loose or disconnected"
+    ],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 290
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "ETH1",
+    "faultTypeCode": 32,
+    "title": "To-ground short circuit fault 1",
+    "description": "The VFD has detected a possible output-to-ground short circuit or current detection problem.",
+    "possibleCauses": [
+      "VFD output is short connected to ground",
+      "Current detection circuit is faulty",
+      "Actual motor power setup deviates sharply from the VFD power"
+    ],
+    "solutions": [
+      "Check whether motor wiring is proper",
+      "Replace the Hall component",
+      "Replace the main control board",
+      "Reset the motor parameters properly"
+    ],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 286
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "ETH2",
+    "faultTypeCode": 33,
+    "title": "To-ground short circuit fault 2",
+    "description": "The VFD has detected a possible output-to-ground short circuit or current detection problem.",
+    "possibleCauses": [
+      "VFD output is short connected to ground",
+      "Current detection circuit is faulty",
+      "Actual motor power setup deviates sharply from the VFD power"
+    ],
+    "solutions": [
+      "Check whether motor wiring is proper",
+      "Replace the Hall component",
+      "Replace the main control board",
+      "Reset the motor parameters properly"
+    ],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 286
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "dEu",
+    "faultTypeCode": 34,
+    "title": "Speed deviation fault",
+    "description": "The motor speed has deviated beyond the permitted condition.",
+    "possibleCauses": ["Load is too heavy", "Stall occurred"],
+    "solutions": [
+      "Check the load to ensure it is proper",
+      "Increase the detection time",
+      "Check whether control parameters are set properly"
+    ],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 286
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "STo",
+    "faultTypeCode": 35,
+    "title": "Maladjustment fault",
+    "description": "The VFD has detected a maladjustment condition.",
+    "possibleCauses": [
+      "Control parameters of the synchronous motor are set improperly",
+      "The parameters gained from autotuning are inaccurate",
+      "The VFD is not connected to the motor"
+    ],
+    "solutions": [
+      "Check the load to ensure it is proper",
+      "Check whether the load is proper",
+      "Check whether control parameters are set correctly",
+      "Increase maladjustment detection time"
+    ],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 286
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "LL",
+    "faultTypeCode": 36,
+    "title": "Electronic underload fault",
+    "description": "The VFD has detected an electronic underload condition based on the configured pre-alarm settings.",
+    "possibleCauses": [
+      "The VFD performs underload pre-alarm based on the set value"
+    ],
+    "solutions": ["Check the load", "Check the overload pre-alarm threshold"],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 286
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "ENC1o",
+    "faultTypeCode": 37,
+    "title": "Encoder offline fault",
+    "description": "The encoder signal is unavailable or incorrectly connected.",
+    "possibleCauses": [
+      "Encoder line sequence is wrong",
+      "Encoder signal wires are poorly connected"
+    ],
+    "solutions": ["Check the encoder wiring"],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 286
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "ENC1d",
+    "faultTypeCode": 38,
+    "title": "Encoder reversal fault",
+    "description": "The encoder speed signal is opposite to the motor running direction.",
+    "possibleCauses": [
+      "Encoder speed signal is contrary to the motor running direction"
+    ],
+    "solutions": ["Reset encoder direction"],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 287
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "ENC1Z",
+    "faultTypeCode": 39,
+    "title": "Encoder Z pulse offline fault",
+    "description": "The encoder Z pulse signal is unavailable.",
+    "possibleCauses": ["Z signal wires are disconnected"],
+    "solutions": ["Check the wiring of the Z signal"],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 287
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "STO",
+    "faultTypeCode": 40,
+    "title": "Safe torque off",
+    "description": "The Safe Torque Off function has been activated.",
+    "possibleCauses": [
+      "Safe torque off function is enabled by external forces"
+    ],
+    "solutions": [],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 287
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "STL1",
+    "faultTypeCode": 41,
+    "title": "Exception occurred to safe circuit of channel H1",
+    "description": "A fault has occurred in the STO safety circuit channel H1.",
+    "possibleCauses": [
+      "STO wiring is improper",
+      "Fault occurred to external switch of STO",
+      "Hardware fault occurred to safety circuit of channel H1"
+    ],
+    "solutions": [
+      "Check whether terminal wiring of STO is proper and firm enough",
+      "Check whether the external STO switch can work properly and restart it",
+      "Replace the control board"
+    ],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 287
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "STL2",
+    "faultTypeCode": 42,
+    "title": "Exception occurred to channel H2 safe circuit",
+    "description": "A fault has occurred in the STO safety circuit channel H2.",
+    "possibleCauses": [
+      "STO wiring is improper",
+      "Fault occurred to external switch of STO",
+      "Hardware fault occurred to safety circuit of channel H2"
+    ],
+    "solutions": [
+      "Check whether terminal wiring of STO is proper and firm enough",
+      "Check whether the external STO switch can work properly and restart it",
+      "Replace the control board"
+    ],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 287
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "STL3",
+    "faultTypeCode": 43,
+    "title": "Exception occurred to channel H1 and channel H2",
+    "description": "A hardware fault has occurred in both STO channels.",
+    "possibleCauses": ["Hardware fault occurred to the STO circuit"],
+    "solutions": ["Replace the control board"],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 287
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "CrCE",
+    "faultTypeCode": 44,
+    "title": "Safety code FLASH CRC check fault",
+    "description": "The safety code FLASH CRC check has failed.",
+    "possibleCauses": ["Control board is faulty"],
+    "solutions": ["Replace the control board"],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 287
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "P-E1",
+    "faultTypeCode": 45,
+    "title": "Programmable card customized fault 1",
+    "description": "A customized fault generated by the programmable card.",
+    "possibleCauses": [
+      "User program logic error in the programmable card",
+      "A fault occurred at the customized position"
+    ],
+    "solutions": [
+      "Check the user program logic",
+      "Perform troubleshooting based on the actual customized fault"
+    ],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 290
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "P-E2",
+    "faultTypeCode": 46,
+    "title": "Programmable card customized fault 2",
+    "description": "A customized fault generated by the programmable card.",
+    "possibleCauses": [
+      "User program logic error in the programmable card",
+      "A fault occurred at the customized position"
+    ],
+    "solutions": [
+      "Check the user program logic",
+      "Perform troubleshooting based on the actual customized fault"
+    ],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 290
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "P-E3",
+    "faultTypeCode": 47,
+    "title": "Programmable card customized fault 3",
+    "description": "A customized fault generated by the programmable card.",
+    "possibleCauses": [
+      "User program logic error in the programmable card",
+      "A fault occurred at the customized position"
+    ],
+    "solutions": [
+      "Check the user program logic",
+      "Perform troubleshooting based on the actual customized fault"
+    ],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 290
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "P-E4",
+    "faultTypeCode": 48,
+    "title": "Programmable card customized fault 4",
+    "description": "A customized fault generated by the programmable card.",
+    "possibleCauses": [
+      "User program logic error in the programmable card",
+      "A fault occurred at the customized position"
+    ],
+    "solutions": [
+      "Check the user program logic",
+      "Perform troubleshooting based on the actual customized fault"
+    ],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 290
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "P-E5",
+    "faultTypeCode": 49,
+    "title": "Programmable card customized fault 5",
+    "description": "A customized fault generated by the programmable card.",
+    "possibleCauses": [
+      "User program logic error in the programmable card",
+      "A fault occurred at the customized position"
+    ],
+    "solutions": [
+      "Check the user program logic",
+      "Perform troubleshooting based on the actual customized fault"
+    ],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 290
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "P-E6",
+    "faultTypeCode": 50,
+    "title": "Programmable card customized fault 6",
+    "description": "A customized fault generated by the programmable card.",
+    "possibleCauses": [
+      "User program logic error in the programmable card",
+      "A fault occurred at the customized position"
+    ],
+    "solutions": [
+      "Check the user program logic",
+      "Perform troubleshooting based on the actual customized fault"
+    ],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 290
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "P-E7",
+    "faultTypeCode": 51,
+    "title": "Programmable card customized fault 7",
+    "description": "A customized fault generated by the programmable card.",
+    "possibleCauses": [
+      "User program logic error in the programmable card",
+      "A fault occurred at the customized position"
+    ],
+    "solutions": [
+      "Check the user program logic",
+      "Perform troubleshooting based on the actual customized fault"
+    ],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 290
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "P-E8",
+    "faultTypeCode": 52,
+    "title": "Programmable card customized fault 8",
+    "description": "A customized fault generated by the programmable card.",
+    "possibleCauses": [
+      "User program logic error in the programmable card",
+      "A fault occurred at the customized position"
+    ],
+    "solutions": [
+      "Check the user program logic",
+      "Perform troubleshooting based on the actual customized fault"
+    ],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 290
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "P-E9",
+    "faultTypeCode": 53,
+    "title": "Programmable card customized fault 9",
+    "description": "A customized fault generated by the programmable card.",
+    "possibleCauses": [
+      "User program logic error in the programmable card",
+      "A fault occurred at the customized position"
+    ],
+    "solutions": [
+      "Check the user program logic",
+      "Perform troubleshooting based on the actual customized fault"
+    ],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 290
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "P-E10",
+    "faultTypeCode": 54,
+    "title": "Programmable card customized fault 10",
+    "description": "A customized fault generated by the programmable card.",
+    "possibleCauses": [
+      "User program logic error in the programmable card",
+      "A fault occurred at the customized position"
+    ],
+    "solutions": [
+      "Check the user program logic",
+      "Perform troubleshooting based on the actual customized fault"
+    ],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 290
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "E-Err",
+    "faultTypeCode": 55,
+    "title": "Repetitive expansion card type",
+    "description": "Two inserted expansion cards are of the same type.",
+    "possibleCauses": ["The two inserted expansion cards are of the same type"],
+    "solutions": [
+      "Do not insert two cards with the same type",
+      "Check the type of expansion card",
+      "Remove one card after powering down"
+    ],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 287
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "ENCUV",
+    "faultTypeCode": 56,
+    "title": "Encoder UVW loss fault",
+    "description": "The encoder UVW signal is not changing as expected.",
+    "possibleCauses": [
+      "No electric level variation occurred to the UVW signal",
+      "Encoder is damaged"
+    ],
+    "solutions": [
+      "Check the wiring of UVW",
+      "Check or replace the encoder if damaged"
+    ],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 288
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "E-PN",
+    "faultTypeCode": 57,
+    "title": "PROFINET card communication timeout fault",
+    "description": "Communication between the PROFINET communication card and the host controller or PLC has timed out.",
+    "possibleCauses": [
+      "There is no data transmission between the communication card and the host controller or PLC"
+    ],
+    "solutions": [
+      "Check whether the communication card wiring is loose or disconnected"
+    ],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 290
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "SECAN",
+    "faultTypeCode": 58,
+    "title": "CAN master/slave communication card communication timeout fault",
+    "description": "Communication between the CAN master and slave communication cards has timed out.",
+    "possibleCauses": [
+      "There is no data transmission between the CAN master and slave communication cards"
+    ],
+    "solutions": [
+      "Check whether the communication card wiring is loose or disconnected"
+    ],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 290
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "OT",
+    "faultTypeCode": 59,
+    "title": "Motor over-temperature fault",
+    "description": "The VFD has detected an excessive motor temperature condition.",
+    "possibleCauses": [
+      "Motor over-temperature input terminal is valid",
+      "Exception occurred to temperature detection",
+      "Exception occurred to resistor",
+      "Long-time overload running or another motor exception occurred"
+    ],
+    "solutions": [
+      "Check the wiring of the motor over-temperature input terminal",
+      "Check whether the temperature sensor is proper",
+      "Check the motor and perform maintenance on the motor"
+    ],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 287
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "F1-Er",
+    "faultTypeCode": 60,
+    "title": "Failed to identify the expansion card in card slot 1",
+    "description": "The VFD detects data transmission from expansion card slot 1 but cannot identify the card type.",
+    "possibleCauses": [
+      "Data transmission exists in card slot 1 but the card type cannot be read"
+    ],
+    "solutions": [
+      "Confirm whether the inserted expansion card is supported",
+      "Power down, stabilize the expansion card interface, and check whether the fault remains after the next power-on",
+      "Check whether the insertion port is damaged and replace it after power down if necessary"
+    ],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 288
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "F2-Er",
+    "faultTypeCode": 61,
+    "title": "Failed to identify the expansion card in card slot 2",
+    "description": "The VFD detects data transmission from expansion card slot 2 but cannot identify the card type.",
+    "possibleCauses": [
+      "Data transmission exists in card slot 2 but the card type cannot be read"
+    ],
+    "solutions": [
+      "Confirm whether the inserted expansion card is supported",
+      "Power down, stabilize the expansion card interface, and check whether the fault remains after the next power-on",
+      "Check whether the insertion port is damaged and replace it after power down if necessary"
+    ],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 288
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "F3-Er",
+    "faultTypeCode": 62,
+    "title": "Failed to identify the expansion card in card slot 3",
+    "description": "The VFD detects data transmission from expansion card slot 3 but cannot identify the card type.",
+    "possibleCauses": [
+      "Data transmission exists in card slot 3 but the card type cannot be read"
+    ],
+    "solutions": [
+      "Confirm whether the inserted expansion card is supported",
+      "Power down, stabilize the expansion card interface, and check whether the fault remains after the next power-on",
+      "Check whether the insertion port is damaged and replace it after power down if necessary"
+    ],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 288
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "C1-Er",
+    "faultTypeCode": 63,
+    "title": "Communication timeout occurred to the expansion card in card slot 1",
+    "description": "Communication with the expansion card in card slot 1 has timed out.",
+    "possibleCauses": [
+      "There is no data transmission in the interfaces of card slot 1"
+    ],
+    "solutions": [
+      "Confirm whether the inserted expansion card is supported",
+      "Power down and stabilize the expansion card interface",
+      "Check whether the insertion port is damaged and replace it after power down if necessary"
+    ],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 289
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "C2-Er",
+    "faultTypeCode": 64,
+    "title": "Communication timeout occurred to the expansion card in card slot 2",
+    "description": "Communication with the expansion card in card slot 2 has timed out.",
+    "possibleCauses": [
+      "There is no data transmission in the interfaces of card slot 2"
+    ],
+    "solutions": [
+      "Confirm whether the inserted expansion card is supported",
+      "Power down and stabilize the expansion card interface",
+      "Check whether the insertion port is damaged and replace it after power down if necessary"
+    ],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 289
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "C3-Er",
+    "faultTypeCode": 65,
+    "title": "Communication timeout occurred to the expansion card in card slot 3",
+    "description": "Communication with the expansion card in card slot 3 has timed out.",
+    "possibleCauses": [
+      "There is no data transmission in the interfaces of card slot 3"
+    ],
+    "solutions": [
+      "Confirm whether the inserted expansion card is supported",
+      "Power down and stabilize the expansion card interface",
+      "Check whether the insertion port is damaged and replace it after power down if necessary"
+    ],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 289
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "E-CAT",
+    "faultTypeCode": 66,
+    "title": "EtherCAT card communication timeout fault",
+    "description": "Communication between the EtherCAT communication card and the host controller or PLC has timed out.",
+    "possibleCauses": [
+      "There is no data transmission between the communication card and the host controller or PLC"
+    ],
+    "solutions": [
+      "Check whether the communication card wiring is loose or disconnected"
+    ],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 290
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "E-BAC",
+    "faultTypeCode": 67,
+    "title": "BACNet card communication timeout fault",
+    "description": "Communication between the BACNet communication card and the host controller or PLC has timed out.",
+    "possibleCauses": [
+      "There is no data transmission between the communication card and the host controller or PLC"
+    ],
+    "solutions": [
+      "Check whether the communication card wiring is loose or disconnected"
+    ],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 290
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "E-DEV",
+    "faultTypeCode": 68,
+    "title": "DeviceNet card communication timeout fault",
+    "description": "Communication between the DeviceNet communication card and the host controller or PLC has timed out.",
+    "possibleCauses": [
+      "There is no data transmission between the communication card and the host controller or PLC"
+    ],
+    "solutions": [
+      "Check whether the communication card wiring is loose or disconnected"
+    ],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 290
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "S-Err",
+    "faultTypeCode": 69,
+    "title": "CAN slave fault in master/slave synchronization",
+    "description": "A CAN slave VFD has experienced a fault during master/slave synchronization.",
+    "possibleCauses": ["A fault occurred to one of the CAN slave VFDs"],
+    "solutions": [
+      "Detect the CAN slave VFD",
+      "Analyze the corresponding fault cause of the VFD"
+    ],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 290
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "OtE1",
+    "faultTypeCode": 70,
+    "title": "EC PT100 detected overheat",
+    "description": "The EC PT100 temperature sensor has detected an over-temperature condition.",
+    "possibleCauses": [
+      "The PT100 temperature sensor is inaccurate or not calibrated",
+      "Device or ambient temperature is too high"
+    ],
+    "solutions": [
+      "Calibrate the sensor through parameter settings",
+      "Lower the device or ambient temperature"
+    ],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 291
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "OtE2",
+    "faultTypeCode": 71,
+    "title": "EC PT1000 detected overheat",
+    "description": "The EC PT1000 temperature sensor has detected an over-temperature condition.",
+    "possibleCauses": [
+      "The PT1000 temperature sensor is inaccurate or not calibrated",
+      "Device or ambient temperature is too high"
+    ],
+    "solutions": [
+      "Calibrate the sensor through parameter settings",
+      "Lower the device or ambient temperature"
+    ],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 291
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "E-EIP",
+    "faultTypeCode": 72,
+    "title": "EtherNet/IP communication timeout",
+    "description": "Communication between the EtherNet/IP communication card and the host controller or PLC has timed out.",
+    "possibleCauses": [
+      "There is no data transmission between the communication card and the host controller or PLC"
+    ],
+    "solutions": [
+      "Check whether the communication card wiring is loose or disconnected"
+    ],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 291
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "E-PAO",
+    "faultTypeCode": 73,
+    "title": "No upgrade bootloader",
+    "description": "The upgrade bootloader is missing.",
+    "possibleCauses": ["The upgrade bootloader is missing"],
+    "solutions": ["Contact INVT"],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 291
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "E-AI1",
+    "faultTypeCode": 74,
+    "title": "AI1 disconnection",
+    "description": "The AI1 analog input signal is too low or disconnected.",
+    "possibleCauses": [
+      "Input voltage of AI1 is too low",
+      "AI1 wiring is disconnected"
+    ],
+    "solutions": [
+      "Connect a 5 V or 10 mA power source to check whether the input is normal",
+      "Check the wiring or replace the cables"
+    ],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 291
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "E-AI2",
+    "faultTypeCode": 75,
+    "title": "AI2 disconnection",
+    "description": "The AI2 analog input signal is too low or disconnected.",
+    "possibleCauses": [
+      "Input voltage of AI2 is too low",
+      "AI2 wiring is disconnected"
+    ],
+    "solutions": [
+      "Connect a 5 V or 10 mA power source to check whether the input is normal",
+      "Check the wiring or replace the cables"
+    ],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 291
+    }
+  },
+  {
+    "make": "INVT",
+    "model": "GD350A",
+    "errorCode": "E-AI3",
+    "faultTypeCode": 76,
+    "title": "AI3 disconnection",
+    "description": "The AI3 analog input signal is too low or disconnected.",
+    "possibleCauses": [
+      "Input voltage of AI3 is too low",
+      "AI4 wiring is disconnected"
+    ],
+    "solutions": [
+      "Connect a 5 V or 10 mA power source to check whether the input is normal",
+      "Check the wiring or replace the cables"
+    ],
+    "source": {
+      "manual": "INVT Goodrive350A Series VFD Manual V1.2",
+      "page": 291
+    }
+  }
+]
