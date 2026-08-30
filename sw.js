@@ -1,7 +1,7 @@
 const CACHE_NAME = "vsd-fault-finder-v1";
 
 const FILES_TO_CACHE = [
-  "main.html",
+  "index.html",
   "drives.html",
   "style.css",
   "main.js",

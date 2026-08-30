@@ -1,7 +1,7 @@
 {
   "name": "VSD Fault Finder",
   "short_name": "VSD Finder",
-  "start_url": "main.html",
+  "start_url": "index.html",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#002d8c",
