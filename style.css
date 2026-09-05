@@ -7,11 +7,40 @@
   --color-sky-light: #8cdbff;
 }
 
+body {
+  background: linear-gradient(#00005a, #002d8c, #298ade, #8cdbff, white, #ffb25a, #de8a29);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.top-bar {
+  display: flex;
+}
+
+.top-drive-bar {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 10px;
+}
+
+#previous-page {
+  color: white;
+  text-decoration: none;
+}
+
+.Logo {
+  width: 80px;
+  height: 80px;
+}
+
 .heading {
   font-family: "Newsreader", serif;
-  font-size: 28px;
-  color: #000000;
+  font-size: 30px;
+  color: #ffffff;
   margin: 0;
+  margin-bottom: 15px;
+  margin-top: 23px;
 }
 
 .sub-heading {
@@ -32,14 +61,21 @@
   align-items: center;
   gap: 12px;
   cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 180px;
+  font-family: "Newsreader", serif;
+  font-size: 20px;
 }
+
 
 .drives-heading {
   font-family: "Newsreader", serif;
   font-size: 28px;
-  color: var(--color-navy);
+  color: white;
   margin: 0;
   align-self: center;
+  margin-bottom: 15px;
 }
 
 .select-row {
@@ -50,12 +86,13 @@
 
 @media (max-width: 600px) {
   .select-row {
-    grid-template-columns:none;
+    grid-template-columns: none;
   }
 }
 
 .select-label {
-  color: var(--color-navy-dark);
+  color: white;
+  /* -webkit-text-stroke: 0.5px black; */
   font-weight: 600;
   margin-bottom: 4px;
 }
@@ -77,6 +114,12 @@ select:focus {
 
 .results div {
   margin-bottom: 8px;
+}
+
+.result-head {
+  font-family: "Newsreader", serif;
+  font-size: 18px;
+  font-style: italic;
 }
 
 .results.has-result {

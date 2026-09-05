@@ -1,4 +1,4 @@
-const CACHE_NAME = "vsd-fault-finder-v1";
+const CACHE_NAME = "vsd-fault-finder-v1.1";
 
 const FILES_TO_CACHE = [
   "index.html",

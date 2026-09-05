@@ -18,7 +18,7 @@ async function loadFaults() {
     const selectedMake = makeSelect.value;
     populateModels(faults, selectedMake);
     errorSelect.length = 1;
-    clearResults(); 
+    clearResults();
   });
 
   const modelSelect = document.getElementById("model-input");
@@ -27,8 +27,19 @@ async function loadFaults() {
     const selectedMake = makeSelect.value;
     const selectedModel = modelSelect.value;
     populateErrorCodes(faults, selectedMake, selectedModel);
-    clearResults(); 
+    clearResults();
   });
+
+  function populateList(elementId, items) {
+    const list = document.getElementById(elementId);
+    list.innerHTML = "";
+
+    for (const item of items) {
+      const li = document.createElement("li");
+      li.textContent = item;
+      list.appendChild(li);
+    }
+  }
 
   errorSelect.addEventListener("change", () => {
     const selectedMake = makeSelect.value;
@@ -43,13 +54,13 @@ async function loadFaults() {
     );
 
     if (!match) {
-        clearResults();   
-    return;
-}
+      clearResults();
+      return;
+    }
     document.getElementById("results").classList.add("has-result");
-    document.getElementById("err-desc").textContent =`${match.title} - ${match.description}`;
-    document.getElementById("err-cause").textContent = match.possibleCauses.join(", ");
-    document.getElementById("err-solution").textContent = match.solutions.join(", ");
+    document.getElementById("err-desc").textContent = `${match.description}`;
+    populateList("err-cause", match.possibleCauses);
+    populateList("err-solution", match.solutions);
   });
 
   populateMakes(faults);
@@ -100,8 +111,8 @@ function populateErrorCodes(faults, selectedMake, selectedModel) {
 
 function clearResults() {
   document.getElementById("err-desc").textContent = "";
-  document.getElementById("err-cause").textContent = "";
-  document.getElementById("err-solution").textContent = "";
+  document.getElementById("err-cause").innerHTML = "";
+  document.getElementById("err-solution").innerHTML = "";
   document.getElementById("results").classList.remove("has-result");
 }
 

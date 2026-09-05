@@ -1,52 +1,60 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>vsd-fault-finder</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap"
-    />
 
-    <link rel="manifest" href="manifest.json" />
-    <meta name="theme-color" content="#b5602f" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="mobile-web-app-capable" content="yes" />
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>vsd-fault-finder</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" />
+
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#b5602f" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+</head>
+
+<body>
+  <div class="top-drive-bar">
+    <a id="previous-page" href="javascript:window.history.back();">Previous Page</a>
     <div class="drives-heading">Drives</div>
-
-    <div class="select-row">
-      <div class="details">
-        <div class="select-label" id="vsd-make">Select VSD Make</div>
-        <select id="make-input">
-          <option value="">Select Make</option>
-        </select>
-      </div>
-      <div class="details">
-        <div class="select-label" id="vsd-model">Select VSD Model</div>
-        <select id="model-input">
-          <option value="">Select Model</option>
-        </select>
-      </div>
-      <div class="details">
-        <div class="select-label" id="vsd-error">Select VSD Error</div>
-        <select id="err-input">
-          <option value="">Select Error</option>
-        </select>
-      </div>
+  </div>
+  <div class="select-row">
+    <div class="details">
+      <div class="select-label" id="vsd-make">Select VSD Make</div>
+      <select id="make-input">
+        <option value="">Select Make</option>
+      </select>
     </div>
-    
-
-    <div class="results" id="results">
-      <div id="err-desc"></div>
-      <div id="err-cause"></div>
-      <div id="err-symptom"></div>
-      <div id="err-solution"></div>
+    <div class="details">
+      <div class="select-label" id="vsd-model">Select VSD Model</div>
+      <select id="model-input">
+        <option value="">Select Model</option>
+      </select>
     </div>
+    <div class="details">
+      <div class="select-label" id="vsd-error">Select VSD Error</div>
+      <select id="err-input">
+        <option value="">Select Error</option>
+      </select>
+    </div>
+  </div>
 
-    <script src="drives.js"></script>
-  </body>
+
+  <div class="results" id="results">
+    <div class="result-head">Description</div>
+    <div id="err-desc"></div>
+    <div class="result-head">Cause</div>
+    <ul id="err-cause"></ul>
+    <!-- <div class="result-head">Error Symptom
+  </div> -->
+    <!-- <div id="err-symptom"></div> -->
+    <div class="result-head">Solution</div>
+    <ul id="err-solution"></ul>
+  </div>
+
+  <script src="drives.js"></script>
+</body>
+
 </html>
