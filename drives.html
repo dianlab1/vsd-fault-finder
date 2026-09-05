@@ -20,7 +20,9 @@
     <a id="previous-page" href="javascript:window.history.back();">Previous Page</a>
     <div class="drives-heading">Drives</div>
   </div>
+  <!--  -->
   <div class="select-row">
+    <!--  -->
     <div class="details">
       <div class="select-label" id="vsd-make">Select VSD Make</div>
       <select id="make-input">
@@ -33,25 +35,38 @@
         <option value="">Select Model</option>
       </select>
     </div>
-    <div class="details">
-      <div class="select-label" id="vsd-error">Select VSD Error</div>
-      <select id="err-input">
-        <option value="">Select Error</option>
-      </select>
+    <!--  -->
+    <div id="error-options">
+      <div class="details">
+        <div class="select-label" id="vsd-error">Select VSD Error</div>
+        <select id="err-input">
+          <option value="">Select Error</option>
+        </select>
+      </div>
+      <div class="details">
+        <div class="select-label" id="vsd-error-code">Select VSD Error Code</div>
+        <select id="errCode-input">
+          <option value="">Select Error</option>
+        </select>
+      </div>
     </div>
+    <!--  -->
   </div>
 
 
   <div class="results" id="results">
-    <div class="result-head">Description</div>
-    <div id="err-desc"></div>
-    <div class="result-head">Cause</div>
-    <ul id="err-cause"></ul>
-    <!-- <div class="result-head">Error Symptom
-  </div> -->
-    <!-- <div id="err-symptom"></div> -->
-    <div class="result-head">Solution</div>
-    <ul id="err-solution"></ul>
+    <div class="result-box">
+      <div class="result-head">Description</div>
+      <div id="err-desc"></div>
+    </div>
+    <div class="result-box">
+      <div class="result-head">Cause</div>
+      <ul id="err-cause"></ul>
+    </div>
+    <div class="result-box">
+      <div class="result-head">Solution</div>
+      <ul id="err-solution"></ul>
+    </div>
   </div>
 
   <script src="drives.js"></script>

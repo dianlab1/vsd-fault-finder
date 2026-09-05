@@ -12,21 +12,23 @@ async function loadFaults() {
   const faults = [...invtFaults, ...inovanceFaults];
 
   const makeSelect = document.getElementById("make-input");
+  const modelSelect = document.getElementById("model-input");
   const errorSelect = document.getElementById("err-input");
+  const errCodeSelect = document.getElementById("errCode-input");
 
   makeSelect.addEventListener("change", () => {
     const selectedMake = makeSelect.value;
     populateModels(faults, selectedMake);
     errorSelect.length = 1;
+    errCodeSelect.length = 1;
     clearResults();
   });
-
-  const modelSelect = document.getElementById("model-input");
 
   modelSelect.addEventListener("change", () => {
     const selectedMake = makeSelect.value;
     const selectedModel = modelSelect.value;
-    populateErrorCodes(faults, selectedMake, selectedModel);
+    populateErrorCodes(faults, selectedMake, selectedModel, "errorCode", "err-input");
+    populateErrorCodes(faults, selectedMake, selectedModel, "faultTypeCode", "errCode-input");
     clearResults();
   });
 
@@ -41,18 +43,7 @@ async function loadFaults() {
     }
   }
 
-  errorSelect.addEventListener("change", () => {
-    const selectedMake = makeSelect.value;
-    const selectedModel = modelSelect.value;
-    const selectedErrorCode = errorSelect.value;
-
-    const match = faults.find(
-      (f) =>
-        f.make === selectedMake &&
-        f.model === selectedModel &&
-        f.errorCode === selectedErrorCode,
-    );
-
+  function showMatch(match) {
     if (!match) {
       clearResults();
       return;
@@ -61,6 +52,41 @@ async function loadFaults() {
     document.getElementById("err-desc").textContent = `${match.description}`;
     populateList("err-cause", match.possibleCauses);
     populateList("err-solution", match.solutions);
+  }
+
+  errorSelect.addEventListener("change", () => {
+    const selectedMake = makeSelect.value;
+    const selectedModel = modelSelect.value;
+    const selectedErrorCode = errorSelect.value;
+
+    // picking an error code clears any leftover fault-type-code selection
+    errCodeSelect.value = "";
+
+    const match = faults.find(
+      (f) =>
+        f.make === selectedMake &&
+        f.model === selectedModel &&
+        f.errorCode === selectedErrorCode,
+    );
+
+    showMatch(match);
+  });
+
+  errCodeSelect.addEventListener("change", () => {
+    const selectedMake = makeSelect.value;
+    const selectedModel = modelSelect.value;
+    const selectedFaultCode = errCodeSelect.value;
+
+    // picking a fault type code clears any leftover error-code selection
+    errorSelect.value = "";
+    const match = faults.find(
+      (f) =>
+        f.make === selectedMake &&
+        f.model === selectedModel &&
+        f.faultTypeCode === Number(selectedFaultCode),
+    );
+
+    showMatch(match);
   });
 
   populateMakes(faults);
@@ -93,19 +119,19 @@ function populateModels(faults, selectedMake) {
   }
 }
 
-function populateErrorCodes(faults, selectedMake, selectedModel) {
-  const errForModel = faults.filter(
+function populateErrorCodes(faults, selectedMake, selectedModel, codeField, selectId) {
+  const matchesForModel = faults.filter(
     (f) => f.make === selectedMake && f.model === selectedModel,
   );
-  const uniqueErr = [...new Set(errForModel.map((f) => f.errorCode))];
-  const errorSelect = document.getElementById("err-input");
-  errorSelect.length = 1;
+  const uniqueCodes = [...new Set(matchesForModel.map((f) => f[codeField]))];
+  const select = document.getElementById(selectId);
+  select.length = 1;
 
-  for (const errorCode of uniqueErr) {
+  for (const code of uniqueCodes) {
     const option = document.createElement("option");
-    option.value = errorCode;
-    option.textContent = errorCode;
-    errorSelect.appendChild(option);
+    option.value = code;
+    option.textContent = code;
+    select.appendChild(option);
   }
 }
 
