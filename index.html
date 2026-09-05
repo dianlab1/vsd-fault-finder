@@ -17,21 +17,52 @@
 </head>
 
 <body>
-  <div class="top-bar">
-    <img src="Logo.png" class="Logo" />
-    <div class="heading">Main Menu</div>
-  </div>
+  <div class="page">
+    <div class="top-bar">
+      <img src="Logo.png" class="Logo" alt="Horizon logo" />
+      <div class="heading">Main Menu</div>
+    </div>
 
-  <!-- <div class="sub-heading">What are we working on ?</div> -->
+    <div class="categories" data-cat="drive">
+      <div class="cat-icon cat-icon--drive">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z" fill="currentColor" />
+        </svg>
+      </div>
+      <div class="cat-text">
+        <div class="cat-title">Drives</div>
+        <div class="cat-sub">VFD &amp; inverter fault codes</div>
+      </div>
+    </div>
 
-  <div class="categories">
-    <div class="cat-select" data-cat="drive">Drives</div>
-  </div>
-  <div class="categories">
-    <div class="cat-select" data-cat="comp">Compressors</div>
-  </div>
-  <div class="categories">
-    <div class="cat-select" data-cat="motor">Motors</div>
+    <div class="categories" data-cat="comp">
+      <div class="cat-icon cat-icon--comp">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="3" y="9" width="14" height="8" rx="1.5" stroke="currentColor" stroke-width="1.6" />
+          <path d="M17 12h2.5a1.5 1.5 0 0 1 1.5 1.5v0a1.5 1.5 0 0 1-1.5 1.5H17" stroke="currentColor"
+            stroke-width="1.6" />
+          <path d="M7 9V6.5A1.5 1.5 0 0 1 8.5 5h1A1.5 1.5 0 0 1 11 6.5V9" stroke="currentColor" stroke-width="1.6" />
+        </svg>
+      </div>
+      <div class="cat-text">
+        <div class="cat-title">Compressors</div>
+        <div class="cat-sub">Air compressor fault codes</div>
+      </div>
+    </div>
+
+    <div class="categories" data-cat="motor">
+      <div class="cat-icon cat-icon--motor">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="3.2" stroke="currentColor" stroke-width="1.6" />
+          <path d="M12 3.5v2.3M12 18.2v2.3M20.5 12h-2.3M5.8 12H3.5M17.7 6.3l-1.6 1.6M7.9 16.1l-1.6 1.6M17.7 17.7l-1.6-1.6M7.9 7.9 6.3 6.3"
+            stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+        </svg>
+      </div>
+      <div class="cat-text">
+        <div class="cat-title">Motors</div>
+        <div class="cat-sub">Motor &amp; bearing fault codes</div>
+      </div>
+    </div>
   </div>
 
   <script src="main.js"></script>
